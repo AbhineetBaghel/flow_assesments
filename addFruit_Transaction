@@ -1,0 +1,11 @@
+import FruitsContract from 0x01
+
+transaction(Name: String, Number: Int) {
+
+  prepare(signer: AuthAccount) {}
+
+  execute {
+    FruitsContract.addFruit(Name: Name, Number: Number)
+    log("fruit added")
+  }
+}

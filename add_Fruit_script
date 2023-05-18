@@ -1,0 +1,5 @@
+import FruitsContract from 0x01
+
+pub fun main(Name: String): FruitsContract.Fruit{
+    return FruitsContract.Fruits[Name]!
+}
